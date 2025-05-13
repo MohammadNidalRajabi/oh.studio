@@ -1,0 +1,124 @@
+
+#root {
+  margin: 0 0;
+  padding: 0 1%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.right {
+  display: inline-block;
+  width: 100%;
+  max-width: 35%;
+  font-size: 3vw;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: #9c9c9c;
+}
+
+.right span {
+  color: black;
+}
+
+.right span:hover {
+  cursor: pointer;
+  color: #9c9c9c;
+  transition: 300ms;
+}
+
+.right img {
+  display: inline-block;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  object-position: center;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.right img:hover {
+  transition: 500ms;
+  filter: brightness(1.2);
+}
+
+.carousel-wrapper {
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.carousel-image {
+  width: 10vw;
+  height: 10vw;
+  margin: 0 1vw;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-image:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  margin: 1vw;
+  width: 20vw;
+  max-width: 20%;
+  aspect-ratio: 1 / 1;
+}
+
+.card .head {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5vw;
+}
+.card .head .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-content: start;
+}
+
+.card .head h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 1vw;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: black;
+}
+
+
+
+.card .head span {
+  font-size: 0.8vw;
+  color: #9c9c9c;
+}
+
+.card .head img {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 8px;
+}
+
+.card img,
+.card video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
